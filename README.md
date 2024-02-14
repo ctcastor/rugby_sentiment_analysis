@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">2024 Six Nations Drama:<br> Analyzing YouTube Reactions to Controversial Try Decision <br>Did France Deserve the Win or Was Scotland Robbed?</h1>
+<h1 style="text-align:center;"><div align="center">2024 Six Nations Drama:</div> <div align="center">Analyzing YouTube Reactions to Controversial Try Decision </div> <div align="center">Did France Deserve the Win or Was Scotland Robbed?</div></h1>
 
 ![](img/headline.jpeg)
 <sup>Credit: The Times</sup>
@@ -26,4 +26,15 @@ Despite potential evidence suggesting otherwise, MacNeice asserted that there wa
 <br>
  This pivotal decision has sparked widespread discussions and debates among rugby enthusiats and fans.
 
-This project seeks to explore and analyze public sentiment surrounding this contentious last-second decision using the comments section of the [official Six Nations YouTube highlight video](https://www.youtube.com/watch?v=Rcst-jIOQDo). The goal is to determine whether the majority of viewers agree with the no-try decision by leveraging OpenAI and sentiment analysis techniques. 
+This project seeks to explore and analyze public sentiment surrounding this contentious last-second decision using the comments section of the [official Six Nations YouTube highlight video](https://www.youtube.com/watch?v=Rcst-jIOQDo). <b>The goal is to determine whether the majority of viewers agree with the no-try decision by leveraging OpenAI and sentiment analysis techniques.</b>
+
+<br>
+
+## Data
+Data collection was performed utilizing the Google YouTube API, which facilitated the extraction of reactions from the highlight video. This API allowed access to and retrieval of comments, replies, and likes associated with the video, offering valuable insights into the diverse reactions and opinions of the viewers. Subsequently, the comments and replies underwent evaluation using OpenAI's API to gauge sentiment regarding the contentious last-second call.
+
+![](img/youtube_openai.png)
+
+<br>
+
+## Analysis
