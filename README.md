@@ -48,9 +48,9 @@ The culmination of this iterative process resulted in the below prompt used for 
 ## Analysis
 After scraping comments data from the [official Six Nations YouTube highlight video](https://www.youtube.com/watch?v=Rcst-jIOQDo) and utilizing OpenAI's GPT model for categorizing each comment as 'Agree' or 'Disagree' along with a confidence score, the next stage of the project involved collecting summary statistics and performing a sanity check on OpenAI's sentiment assessment of the most liked comments.
 
-> The video was posted on Feb 10, 2024 and as of Feb 16, 2024, has reached <b>357,447</b> views, with <b>451</b> comments and <b>4,172 likes</b>.
+The video was posted on Feb 10, 2024 and as of Feb 16, 2024, has reached <b>357,447</b> views, with <b>451</b> comments and <b>4,172 likes</b>.
 
-> Below are the top 5 comments based on number of likes and their respective classifications and confidence scores. Each comment is correctly identified as <b>'Disagree'</b>.
+Below are the top 5 comments based on number of likes and their respective classifications and confidence scores. Each comment is correctly identified as <b>'Disagree'</b>.
 > 1. <b>"Like if Scotland were robbed" </b> (1,383 likes | Disagree:4)
 > 2. <b>"As a frenchman, used to being cheated, I must say it's sad to win this way. The last try seemed valid. Sorry my Scottish friends, totally undeserved defeat for you." </b> (433 likes | Disagree:4)
 > 3. <b>"Frenchman here . Finn russell is a real gentleman smiling to the french while being robbed and shaking hands . Wonderful player wonderful spirit. NO ENGLISHMAN WOULD DO THAT, that's why we love Scotland !" </b> (387 likes | Disagree:4)
@@ -62,16 +62,22 @@ After scraping comments data from the [official Six Nations YouTube highlight vi
 ### Sentiment Distribution
 Following the compilation of summary statistics and the completion of a sanity check, the next phase of the project involved the visualization of OpenAI's sentiment assessment regarding the contentious no-try decision. Below are charts illustrating the distribution of comments, likes, confidence scores, and the correlation between assessment and confidence scores.
 
-> <b>81.4%</b> of comments <b><u>disagree</b></u> with the referee's decision
+<b>81.4%</b> of comments <b><u>disagree</b></u> with the referee's decision
 <br>![](img/comment_assessment.png)
 
-> Comments that <b><u>disagreed</b></u> with the referee's decision also had the most likes, <b>95.9%</b>
+<br>
+
+Comments that <b><u>disagreed</b></u> with the referee's decision also had the most likes, <b>95.9%</b>
 <br>![](img/like_assessment.png)
 
-> OpenAI's GPT model was very confident in categorizing comments with <b>81.8%</b> of comments receiving a confidence score of 4 or 5
+<br>
+
+OpenAI's GPT model was very confident in categorizing comments with <b>81.8%</b> of comments receiving a confidence score of 4 or 5
 <br>![](img/confidence.png)
 
-> <b>65.6%</b> of comments were classified as "Disagree" with a confidence score of 4
+<br>
+
+<b>65.6%</b> of comments were classified as "Disagree" with a confidence score of 4
 <br>![](img/assessment_vs_confidence.png)
 
 <br>
@@ -79,10 +85,14 @@ Following the compilation of summary statistics and the completion of a sanity c
 ### Word Clouds
 After assessing the overall distribution of feedback from OpenAI, each comment underwent tokenization and cleansing using [spaCy](https://spacy.io/), a free open-source library for Natural Language Processing. The processed text was then subjected to analysis using the [VADER model](https://ojs.aaai.org/index.php/ICWSM/article/view/14550), a rule-based model for sentiment analysis of social media text. This preprocessing step eliminated "neutral" words from the comments, retaining only expressions of positive or negative sentiment. Finally, the refined words were utilized to generate word clouds, providing visual representations of YouTube comments where the word size reflects its frequency within the comment.
 
-> Comments aligning with the referee's decision conveyed positivity through words like <b>good</b>, <b>great</b>, <b>better</b>, and <b>love</b>. These terms reflect satisfaction with the referee's decision, suggesting a sentiment that favors the view that France performed well and were the better team.
+<br>
+
+Comments aligning with the referee's decision conveyed positivity through words like <b>good</b>, <b>great</b>, <b>better</b>, and <b>love</b>. These terms reflect satisfaction with the referee's decision, suggesting a sentiment that favors the view that France performed well and were the better team.
 <br>![](img/agree_wordcloud.png)
 
-> Comments expressing disagreement with the referee's decision exhibited a negative sentiment, prominently employing the words <b>clearly</b> <b>robbed</b>. This choice of language signifies a strong disapproval of the referee's judgement and, consequently, dissatisfaction with the overall outcome of the match.
+<br>
+
+Comments expressing disagreement with the referee's decision exhibited a negative sentiment, prominently employing the words <b>clearly</b> <b>robbed</b>. This choice of language signifies a strong disapproval of the referee's judgement and, consequently, dissatisfaction with the overall outcome of the match.
 <br>![](img/disagree_wordcloud.png)
 
 <br>
@@ -90,12 +100,12 @@ After assessing the overall distribution of feedback from OpenAI, each comment u
 ### OpenAI's GPT Summary
 The concluding stage of the project reengaged OpenAI's GPT model to encapsulate the prevailing sentiment within comments with the highest confidence scores. Comments were separated by their classification, filtered based on confidence score of 4 or 5, and sorted in descending order by number of likes. The top 50 comments from each group were then systematically gathered. The GPT model was tasked to provide the overarching theme using 3 sentences, below are the responses.
 
-> Summary of the <b>'Agree'</b> comments:<br>
+Summary of the <b>'Agree'</b> comments:<br>
 > "French fans are happy about the favorable referee decision, while some believe that Scotland had their chances and should not blame the officials. Many feel that the decision to not award the try was correct due to lack of clear evidence of grounding. Overall, the game was seen as hard-fought and controversial, with some acknowledging that the rules were followed despite frustrations."
 
 <br>
 
-> Summary of the <b>'Disagree'</b> comments:<br>
+Summary of the <b>'Disagree'</b> comments:<br>
 > "Many viewers felt that Scotland was robbed of a victory in the match against France, with some even admitting that it was a clear try for Scotland. Fans from various countries expressed disappointment with the outcome of the game and criticized the officiating. Despite the controversy, many praised the sportsmanship shown by Scotland and the respectful manner in which they accepted the defeat."
 
 <br>
