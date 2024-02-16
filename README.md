@@ -35,7 +35,7 @@ Data collection was performed utilizing the Google YouTube API, which facilitate
 
 ![](img/youtube_openai.png)
 
-The prompt below was used to interact with OpenAI to evaluate each comment and replies sentiment.
+The prompt below was used to interact with OpenAI to evaluate each comment and replies' sentiment.
 > Scotland were denied victory by an inconclusive last-second try review as France held on to win a tense Six Nations rugby encounter. Replays suggested the ball was grounded by Sam Skinner but the on-field referee, Nic Berry, had called no-try and the Television Match Official (TMO), Brian MacNeice, claimed to not have the evidence to conclusively prove otherwise. I want you to analyze the following text and determine whether they agree with the no-try decision meaning France fairly, deservedly won the game ("Agree") or whether they disagree with the no-try decision meaning it was a try and Scotland was robbed and deserved to win ("Disagree"). I only want you to reply to this with "Agree" or "Disagree" but if you really can't make a decision then reply "Inconclusive".
  
 
