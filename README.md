@@ -108,6 +108,8 @@ Comments expressing disagreement with the referee's decision exhibited a negativ
 ## OpenAI's GPT Summary
 The concluding stage of the project reengaged OpenAI's GPT model to encapsulate the prevailing sentiment within comments with the highest confidence scores. Comments were separated by their classification, filtered based on confidence score of 4 or 5, and sorted in descending order by number of likes. The top 50 comments from each group were then systematically gathered. The GPT model was tasked to provide the overarching theme using 3 sentences, below are the responses.
 
+<br>
+
 Summary of the <b>'Agree'</b> comments:<br>
 > "French fans are happy about the favorable referee decision, while some believe that Scotland had their chances and should not blame the officials. Many feel that the decision to not award the try was correct due to lack of clear evidence of grounding. Overall, the game was seen as hard-fought and controversial, with some acknowledging that the rules were followed despite frustrations."
 
