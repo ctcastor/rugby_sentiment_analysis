@@ -26,7 +26,7 @@ Despite potential evidence suggesting otherwise, MacNeice asserted that there wa
 <br>
  This pivotal decision has sparked widespread discussions and debates among rugby enthusiasts and fans.
 
-This project seeks to explore and analyze public sentiment surrounding this contentious last-second decision using the comments section of the [official Six Nations YouTube highlight video](https://www.youtube.com/watch?v=Rcst-jIOQDo). <b>The goal is to determine whether the majority of viewers agree with the no-try decision by leveraging OpenAI's GPT-3.5 Turbo model and sentiment analysis techniques.</b>
+This project seeks to explore and analyze public sentiment surrounding this contentious last-second decision using the comments section of the [official Six Nations YouTube highlight video](https://www.youtube.com/watch?v=Rcst-jIOQDo). **`The goal is to determine whether the majority of viewers agree with the no-try decision by leveraging OpenAI's GPT-3.5 Turbo model and sentiment analysis techniques`**.
 
 <br>
 
@@ -50,7 +50,7 @@ After scraping comments data from the [official Six Nations YouTube highlight vi
 
 <br>
 
-The video was posted on Feb 10, 2024 and as of Feb 16, 2024, has reached <b>357,447</b> views, with <b>451</b> comments and <b>4,172 likes</b>. Below are the top 5 comments based on number of likes and their respective classifications and confidence scores. Each comment is correctly identified as <b>'Disagree'</b>.
+The video was posted on Feb 10, 2024 and as of Feb 16, 2024, has reached **`357,447`** views, with **`451`** comments and **`4,172`** likes. Below are the top 5 comments based on number of likes and their respective classifications and confidence scores. Each comment is correctly identified as **`'Disagree'`**.
 > 1. <b>"Like if Scotland were robbed" </b> (1,383 likes | Disagree:4)
 > 2. <b>"As a frenchman, used to being cheated, I must say it's sad to win this way. The last try seemed valid. Sorry my Scottish friends, totally undeserved defeat for you." </b> (433 likes | Disagree:4)
 > 3. <b>"Frenchman here . Finn russell is a real gentleman smiling to the french while being robbed and shaking hands . Wonderful player wonderful spirit. NO ENGLISHMAN WOULD DO THAT, that's why we love Scotland !" </b> (387 likes | Disagree:4)
@@ -64,25 +64,25 @@ Following the compilation of summary statistics and the completion of a sanity c
 
 <br>
 
-<b>81.4%</b> of comments <b><u>disagree</b></u> with the referee's decision
+**`81.4%`** of comments **<u>`disagree`</u>** with the referee's decision
 
 <br>![](img/comment_assessment.png)
 
 <br>
 
-Comments that <b><u>disagreed</b></u> with the referee's decision also had the most likes, <b>95.9%</b>
+Comments that **<u>`disagreed`</u>** with the referee's decision also had the most likes, **`95.9%`**
 
 <br>![](img/like_assessment.png)
 
 <br>
 
-OpenAI's GPT model was very confident in categorizing comments with <b>81.8%</b> of comments receiving a confidence score of 4 or 5
+OpenAI's GPT model was very confident in categorizing comments with **`81.8%`** of comments receiving a confidence score of 4 or 5
 
 <br>![](img/confidence.png)
 
 <br>
 
-<b>65.6%</b> of comments were classified as "Disagree" with a confidence score of 4
+**`65.6%`** of comments were classified as "Disagree" with a confidence score of 4
 
 <br>![](img/assessment_vs_confidence.png)
 
@@ -93,13 +93,13 @@ After assessing the overall distribution of feedback from OpenAI, each comment u
 
 <br>
 
-Comments aligning with the referee's decision conveyed positivity through words like <b>good</b>, <b>great</b>, <b>better</b>, and <b>love</b>. These terms reflect satisfaction with the referee's decision, suggesting a sentiment that favors the view that France performed well and were the better team.
+Comments aligning with the referee's decision conveyed positivity through words like **`good`**, **`great`**, **`better`**, and **`love`**. These terms reflect satisfaction with the referee's decision, suggesting a sentiment that favors the view that France performed well and were the better team.
 
 <br>![](img/agree_wordcloud.png)
 
 <br>
 
-Comments expressing disagreement with the referee's decision exhibited a negative sentiment, prominently employing the words <b>clearly</b> <b>robbed</b>. This choice of language signifies a strong disapproval of the referee's judgement and, consequently, dissatisfaction with the overall outcome of the match.
+Comments expressing disagreement with the referee's decision exhibited a negative sentiment, prominently employing the words **`clearly`** **`robbed`**. This choice of language signifies a strong disapproval of the referee's judgement and, consequently, dissatisfaction with the overall outcome of the match.
 
 <br>![](img/disagree_wordcloud.png)
 
@@ -110,12 +110,12 @@ The concluding stage of the project reengaged OpenAI's GPT model to encapsulate 
 
 <br>
 
-Summary of the <b>'Agree'</b> comments:<br>
+Summary of the **`'Agree'`** comments:<br>
 > "French fans are happy about the favorable referee decision, while some believe that Scotland had their chances and should not blame the officials. Many feel that the decision to not award the try was correct due to lack of clear evidence of grounding. Overall, the game was seen as hard-fought and controversial, with some acknowledging that the rules were followed despite frustrations."
 
 <br>
 
-Summary of the <b>'Disagree'</b> comments:<br>
+Summary of the **`'Disagree'`** comments:<br>
 > "Many viewers felt that Scotland was robbed of a victory in the match against France, with some even admitting that it was a clear try for Scotland. Fans from various countries expressed disappointment with the outcome of the game and criticized the officiating. Despite the controversy, many praised the sportsmanship shown by Scotland and the respectful manner in which they accepted the defeat."
 
 <br>
@@ -123,9 +123,9 @@ Summary of the <b>'Disagree'</b> comments:<br>
 # Conclusion
 The analysis of YouTube reactions to the controversial no-try decision in the 2024 Six Nations clash between Scotland and France revealed a polarized sentiment among viewers. The project leveraged OpenAI's GPT-3.5 Turbo model and sentiment analysis techniques to categorize comments into 'Agree' or 'Disagree' based on their stance on the decision.
 
-The sentiment distribution charts illustrated a signficant disagreement with the referee's decision with <b>81.4%</b> of comments expressing dissent. Interestingly, comments in disagreement also had the highest number of likes, emphasizing viewer dissatisfaction.
+The sentiment distribution charts illustrated a significant disagreement with the referee's decision with **`81.4%`** of comments expressing dissent. Interestingly, comments in disagreement also had the highest number of likes, emphasizing viewer dissatisfaction.
 
-Word clouds provided a nuanced understanding of the sentiment conveyed in the comments. Positive sentiments among 'Agree' comments reflected satisfaction with the referee's decision through words like <b>good</b>, <b>great</b>, <b>better</b>, and <b>love</b>. Conversely, 'Disagree' comments were characterized by negative terms like <b>clearly</b> <b>robbed</b>, signifying strong disapproval. 
+Word clouds provided a nuanced understanding of the sentiment conveyed in the comments. Positive sentiments among 'Agree' comments reflected satisfaction with the referee's decision through words like **`good`**, **`great`**, **`better`**, and **`love`**. Conversely, 'Disagree' comments were characterized by negative terms like **`clearly`** **`robbed`**, signifying strong disapproval. 
 
 The GPT model's summaries of top comments in each category reinforced the diverse perspectives. 'Agree' comments seemed to acknowledge the controversial nature of the match but were satisfied with the adherence to rules. On the other hand, 'Disagree' comments reflected a sentiment of being robbed and viewers from various countries criticized the officiating.
 
